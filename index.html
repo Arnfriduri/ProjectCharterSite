@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technical Project Charter Template</title>
+    <style>
+        /* -------------------------------------------------
+           Simple, clean styling – works on any browser
+           ------------------------------------------------- */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 900px;
+            margin: 2rem auto;
+            line-height: 1.6;
+            color: #333;
+            background: #fafafa;
+            padding: 0 1rem;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: .3rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: .5rem;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: #f4f4f4;
+        }
+        .download {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .download a {
+            display: inline-block;
+            background: #0066cc;
+            color: #fff;
+            padding: .6rem 1.2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .footer {
+            font-size: .85rem;
+            color: #777;
+            margin-top: 3rem;
+            border-top: 1px solid #ddd;
+            padding-top: .5rem;
+        }
+        .feedback {
+            margin-top: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Technical Project Charter Template</h1>
+
+<p><strong>Version:</strong> 2.0 <strong>Last updated:</strong> 2025‑09‑15</p>
+
+<h2>1. Project Title</h2>
+<p>Enter a concise, descriptive name (e.g., “Secure Cloud Migration – Finance Dept.”)</p>
+
+<h2>2. Project Sponsor</h2>
+<p>Name, title, contact information (the person authorising the budget).</p>
+
+<h2>3. Project Manager</h2>
+<p>Your name, PMP‑certified, contact details.</p>
+
+<h2>4. Purpose / Business Case</h2>
+<ul>
+    <li>Problem statement</li>
+    <li>Desired outcome</li>
+    <li>Expected benefits (cost‑savings, risk reduction, revenue enablement)</li>
+</ul>
+
+<h2>5. Scope</h2>
+<p><strong>In‑Scope</strong></p>
+<ul>
+    <li>List of deliverables, systems, locations that are included.</li>
+</ul>
+<p><strong>Out‑of‑Scope</strong></p>
+<ul>
+    <li>Items explicitly excluded.</li>
+</ul>
+
+<h2>6. High‑Level Requirements</h2>
+<p>Functional and non‑functional requirements (performance, security, compliance, etc.).</p>
+
+<h2>7. Milestones &amp; Timeline</h2>
+<table>
+    <thead>
+        <tr><th>Milestone</th><th>Description</th><th>Target Date</th><th>Owner</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Kick‑off</td><td>Formal project launch meeting</td><td>2025‑10‑05</td><td>PM</td></tr>
+        <tr><td>Requirements Sign‑off</td><td>All functional &amp; non‑functional requirements approved</td><td>2025‑10‑19</td><td>Business Analyst</td></tr>
+        <tr><td>Design Complete</td><td>Architecture diagrams, security controls finalized</td><td>2025‑11‑02</td><td>Lead Architect</td></tr>
+        <tr><td>Pilot Migration</td><td>Migrate 1 % of workloads to test environment</td><td>2025‑11‑16</td><td>Cloud Engineer</td></tr>
+        <tr><td>Full Migration</td><td>Cut‑over all production workloads</td><td>2025‑12‑14</td><td>Cloud Engineer</td></tr>
+        <tr><td>Post‑Go‑Live Review</td><td>Validate SLA compliance, capture lessons learned</td><td>2025‑12‑28</td><td>PM</td></tr>
+    </tbody>
+</table>
+
+<h2>8. Budget Summary</h2>
+<ul>
+    <li>Hardware / Cloud resources: $____</li>
+    <li>Software licences: $____</li>
+    <li>Consulting / Services: $____</li>
+    <li>Contingency (10 %): $____</li>
+    <li><strong>Total Estimated Cost:</strong> $____</li>
+</ul>
+
+<h2>9. Success Criteria / Acceptance Tests</h2>
+<ul>
+    <li>All critical services migrated with < 2 % latency increase.</li>
+    <li>Zero data loss – verified via checksum comparison.</li>
+    <li>Stakeholder sign‑off obtained within 5 business days of go‑live.</li>
+</ul>
+
+<h2>10. Risks &amp; Mitigations</h2>
+<table>
+    <thead>
+        <tr><th>#</th><th>Risk</th><th>Probability</th><th>Impact</th><th>Mitigation</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>Vendor API rate‑limit throttling during bulk transfer</td><td>Medium</td><td>High</td><td>Schedule transfers in off‑peak windows; implement exponential back‑off logic.</td></tr>
+        <tr><td>2</td><td>Data loss during migration</td><td>Low</td><td>Critical</td><td>Perform full backup &amp; checksum verification before each batch.</td></tr>
+        <tr><td>3</td><td>Stakeholder resistance to new workflow</td><td>Medium</td><td>Medium</td><td>Conduct early workshops; incorporate change‑management plan.</td></tr>
+        <tr><td>4</td><td>Compliance gap (e.g., GDPR) in target cloud region</td><td>Low</td><td>High</td><td>Run a compliance checklist; involve DPO before go‑live.</td></tr>
+    </tbody>
+</table>
+
+<h2>11. Stakeholder Register</h2>
+<table>
+    <thead>
+        <tr><th>Stakeholder</th><th>Role</th><th>Interest (H/M/L)</th><th>Influence (H/M/L)</th><th>Communication Preference</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Jane Doe</td><td>CFO</td><td>H</td><td>M</td><td>Monthly summary report (PDF)</td></tr>
+        <tr><td>John Smith</td><td>Head of IT Ops</td><td>H</td><td>H</td><td>Weekly stand‑up (Teams)</td></tr>
+        <tr><td>Maria Lee</td><td>Data Protection Officer</td><td>M</td><td>H</td><td>Ad‑hoc security review meetings</td></tr>
+        <tr><td>External Vendor</td><td>Cloud Provider Account Manager</td><td>L</td><td>M</td><td>Email updates (bi‑weekly)</td></tr>
+    </tbody>
+</table>
+
+<h2>12. Communication Plan</h2>
+<ul>
+    <li>Weekly status email – PM → all stakeholders (Monday 09:00 CET)</li>
+    <li>Bi‑weekly steering committee meeting – PM &amp; Sponsor (Zoom)</li>
+    <li>Ad‑hoc risk alerts – instant Slack channel #project‑charter‑risk</li>
+</ul>
+
+<h2>13. Approvals</h2>
+<p>Signatures (electronic or scanned) required before project kickoff:</p>
+<ul>
+    <li>Project Sponsor _______________________ Date __________</li>
+    <li>Project Manager _______________________ Date __________</li>
+    <li>Security Officer _______________________ Date __________</li>
+</ul>
+
+<div class="download">
+    <a href="project-charter-template.docx" download>Download DOCX version of the Charter</a>
+</div>
+
+<div class="feedback">
+    <p>Need a change or have a question? <a href="mailto:yourname@proton.me?subject=Project%20Charter%20Feedback">Email me</a>.</p>
+</div>
+
+<footer class="footer">
+    <p>© 2025 Proton – This template is provided under the Proton Way: privacy‑first, encrypted, and freely reusable. Keep the version number up‑to‑date when you modify the document.</p>
+</footer>
+
+</body>
+</html>
